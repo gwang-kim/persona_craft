@@ -1,6 +1,6 @@
-# BeyondScene: Higher-Resolution Human-Centric Scene Generation With Pretrained Diffusion
+# PersonaCraft: Personalized Full-Body Image Synthesis for Multiple Identities from Single References Using 3D-Model-Conditioned Diffusion
 
-This is the repository that contains source code for the [Beyond Scene website](https://janeyeon.github.io/beyond-scene).
+This is the repository that contains source code for the [PersonaCraft project page](https://gwang-kim.github.io/persona_craft/).
 
 
 
