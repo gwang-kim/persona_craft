@@ -181,7 +181,7 @@
 <section class="hero is-small">
     <div  style="background-color: #ececec;">
     <br>
-    <div class="container-small">
+    <div class="container is-max-desktop">
       <h2 class="title is-3"><strong>Abstract</strong></h2>
         <p style="text-align: center">
           <strong>Personalized image generation has been significantly advanced, enabling the creation of highly realistic and customized images. However, existing methods often struggle with generating images of multiple people due to occlusions and fail to accurately personalize full-body shapes. In this paper, we propose <span class="dnerf">PersonaCraft</span>, a novel approach that combines diffusion models with 3D human modeling to address these limitations. Our method effectively manages occlusions by incorporating 3D-aware pose conditioning with SMPLx-ControlNet and accurately personalizes human full-body shapes through SMPLx fitting. Additionally, PersonaCraft enables user-defined body shape adjustments, adding flexibility for individual body customization. Experimental results demonstrate the superior performance of PersonaCraft in generating high-quality, realistic images of multiple individuals while resolving occlusion issues, thus establishing a new standard for multi-person personalized image synthesis.</strong>
@@ -228,34 +228,52 @@
 <section class="hero is-small">
   <!-- <div style="background-color:#FAF3F0;"> -->
   <h2 class="title is-3"><strong>Comparision</h2>
+    <div class="column is-four-fifths">
+      
+    </div>
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <!-- Paper image. -->
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <p style="text-align: center"> Comparison of PersonaCraft with baselines. <span style="color: #f9e320;">Yellow</span> arrows show anatomical inconsistencies in poses and occlusions. <span style="color: #fa6d85;">Pink</span> arrows highlight identity mixing or duplication in baselines. <span style="color: #0000FF;">Blue</span> arrows refer to the people for checking correct body shape preservation.PersonaCraft excels in face identity, body shape consistency, and naturalness compared to the baselines.</span> </p>
 
-  <p style="text-align: center"> Comparison of PersonaCraft with baselines. <span style="color: #f9e320;">Yellow</span> arrows show anatomical inconsistencies in poses and occlusions. <span style="color: #fa6d85;">Pink</span> arrows highlight identity mixing or duplication in baselines. <span style="color: #0000FF;">Blue</span> arrows refer to the people for checking correct body shape preservation.PersonaCraft excels in face identity, body shape consistency, and naturalness compared to the baselines.</span> </p>
-
-
-  <div class="hero-body">
-    <div class="content has-text-justified">
-      <!-- 7K images -->
-      <!-- <h3 class="title is-4"><strong>4-5 Humans <span style="color: #974EC3;">7168 x 4096</span></h3> -->
-
-      <div id="carousel" class="carousel">
-        <div class="img-txt">
-          <img src="./static/images/personacraft/2_comparision_1.jpg" >
+            <div class="hero-body">
+              <div class="content has-text-justified">
+                <!-- 7K images -->
+                <!-- <h3 class="title is-4"><strong>4-5 Humans <span style="color: #974EC3;">7168 x 4096</span></h3> -->
+          
+                <div id="carousel" class="carousel">
+                  <div class="img-txt">
+                    <img src="./static/images/personacraft/2_comparision_1.jpg" >
+                  </div>
+                  <div class="img-txt">
+                    <img src="./static/images/personacraft/2_comparision_2.jpg" >
+                  </div>
+                  <div class="img-txt">
+                    <img src="./static/images/personacraft/2_comparision_3.jpg" >
+                  </div>
+                  <div class="img-txt">
+                    <img src="./static/images/personacraft/2_comparision_4.jpg" >
+                  </div>
+                  <div class="img-txt">
+                    <img src="./static/images/personacraft/2_comparision_5.jpg" >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="img-txt">
-          <img src="./static/images/personacraft/2_comparision_2.jpg" >
-        </div>
-        <div class="img-txt">
-          <img src="./static/images/personacraft/2_comparision_3.jpg" >
-        </div>
-        <div class="img-txt">
-          <img src="./static/images/personacraft/2_comparision_4.jpg" >
-        </div>
-        <div class="img-txt">
-          <img src="./static/images/personacraft/2_comparision_5.jpg" >
-        </div>
+        <!--/ Paper image. -->
+      </div>
+  
+        
       </div>
     </div>
-  </div>
+  
+
+
+  
   <!-- </div> -->
 
   <div class="hero-body">
