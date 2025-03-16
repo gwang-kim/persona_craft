@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="Generating higher-resolution human-centric scenes with details and controls for exsiting text-to-image diffusion model">
+        content="PersonaCraft: Personalized and Controllable Full-Body Multi-Human Scene Generation Using Occlusion-Aware 3D-Conditioned Diffusion">
   <meta name="keywords" content="Largescenegeneration, ScaleCrafter">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>PersonaCraft: Personalized Full-Body Image Synthesis for Multiple Identities from Single References Using 3D-Model-Conditioned Diffusion</title>
+  <title>PersonaCraft: Personalized and Controllable Full-Body Multi-Human Scene Generation Using Occlusion-Aware 3D-Conditioned Diffusion</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
@@ -165,9 +165,6 @@
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
         <p style="text-align: center">
-            <strong>We propose <span class="dnerf">PersonaCraft</span>, a novel approach that integrates diffusion models with <span style="color: #0000FF;">3D human modeling</span> to address <span style="color: #0000FF;">occlusions</span> and enable <span style="color: #0000FF;">full-body</span> personalization for multiple individuals in a scene. 
-          Furthermore, we introduce a novel feature for <span style="color: #0000FF;">user-defined body shape control</span></strong>. 
-        </p>
           <img src="./static/images/personacraft/0_teaser.jpg" >
         </div>
       </div>
@@ -185,7 +182,7 @@
     <div class="container is-max-desktop">
       <h2 class="title is-3"><strong>Abstract</strong></h2>
         <p style="text-align: center">
-          <strong>Personalized image generation has been significantly advanced, enabling the creation of highly realistic and customized images. However, existing methods often struggle with generating images of multiple people due to occlusions and fail to accurately personalize full-body shapes. In this paper, we propose <span class="dnerf">PersonaCraft</span>, a novel approach that combines diffusion models with 3D human modeling to address these limitations. Our method effectively manages occlusions by incorporating 3D-aware pose conditioning with SMPLx-ControlNet and accurately personalizes human full-body shapes through SMPLx fitting. Additionally, PersonaCraft enables user-defined body shape adjustments, adding flexibility for individual body customization. Experimental results demonstrate the superior performance of PersonaCraft in generating high-quality, realistic images of multiple individuals while resolving occlusion issues, thus establishing a new standard for multi-person personalized image synthesis.</strong>
+          <strong>We present PersonaCraft, a framework for controllable and occlusion-robust full-body personalized image synthesis of multiple individuals in complex scenes. Current methods struggle with occlusion-heavy scenarios and complete body personalization, as 2D pose conditioning lacks 3D geometry, often leading to ambiguous occlusions and anatomical distortions, and many approaches focus solely on facial identity. In contrast, our PersonaCraft integrates diffusion models with 3D human modeling, employing SMPLx-ControlNet, to utilize 3D geometry like depth and normal maps for robust 3D-aware pose conditioning and enhanced anatomical coherence. To handle fine-grained occlusions, we propose Occlusion Boundary Enhancer Network that exploits depth edge signals with occlusion-focused training, and Occlusion-Aware Classifier-Free Guidance strategy that selectively reinforces conditioning in occluded regions without affecting unoccluded areas. PersonaCraft can seamlessly be combined with Face Identity ControlNet, achieving full-body multi-human personalization and thus marking a significant advancement beyond prior approaches that concentrate only on facial identity. Our dual-pathway body shape representation with SMPLx-based shape parameters and textual refinement, enables precise full-body personalization and flexible user-defined body shape adjustments. Extensive quantitative experiments and user studies demonstrate that PersonaCraft significantly outperforms existing methods in generating high-quality, multi-person images with accurate personalization and robust occlusion handling.</strong>
       </p>
     </div>
     <br>
@@ -194,35 +191,7 @@
   
 </section>
 
-<br>
-<section class="hero is-small">
-  <!-- <div style="background-color:#FAF3F0;"> -->
-  <h2 class="title is-3"><strong>Method</h2>
 
-
-    <div class="container is-max-desktop">
-      <div class="hero-body">
-        <!-- Paper image. -->
-        <div class="columns is-centered has-text-centered">
-          <div class="column is-four-fifths">
-          <p style="text-align: center">
-              Overview of <span class="dnerf">PersonaCraft</span>. We extract face and body embeddings from reference images, then perform personalized image synthesis using controllable modules for face identity and body shape customization. 
-          </p>
-            <img src="./static/images/personacraft/0_method_overview.jpg" >
-          <p style="text-align: center">
-              SMPLx-ControlNet (SCNet) leverages 3D-aware pose conditioning using SMPLx models to accurately capture body shape and pose. 
-          </p>
-            <img src="./static/images/personacraft/0_method_SCNet.jpg" >
-          </div>
-
-
-        </div>
-        <!--/ Paper image. -->
-      </div>
-  
-        
-      </div>
-    </div>
 
 
 <br>
